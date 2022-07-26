@@ -1,0 +1,42 @@
+.Drawer {
+  position: absolute;
+  top: 7rem;
+  right: 0;
+  transform: translateX(100%);
+  transform-origin: right;
+  transition: all .3s;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem rgb(0 0 0 / 20%);
+  height: calc(100vh - 7.1rem);
+  background-color: rgb(249, 99, 49);
+  min-width: 60rem;
+  color: #fff;
+
+  &--open {
+    transform: translate(0%);
+  }
+}
+
+.DrawerProfile {
+  text-align: center;
+}
+
+.DrawerNotifications-List {
+  padding: 0;
+  list-style: none;
+}
+
+.DrawerNotifications-ListItem {
+  margin: 1.6rem 0;
+}
+
+.DrawerProfileInput .TextInput-Input {
+  color: #fff;
+}
+
+@media (max-width: 745px) {
+  .Drawer {
+    display: none;
+  }
+}

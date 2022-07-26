@@ -18,3 +18,9 @@
   color: #fff;
   background-color: inherit;
 }
+
+@media (max-width: 745px) {
+  .NavbarSidesAction-Btn {
+    display: none;
+  }
+}

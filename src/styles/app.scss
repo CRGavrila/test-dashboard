@@ -1,5 +1,15 @@
 :root {
 	font-size: $rem-baseline;
+  overflow-x: hidden;
+}
+
+html {
+  box-sizing: border-box;
+
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -19,7 +29,6 @@ body {
 
 #root {
 	display: block;
-
 	min-height: 100vh;
 }
 

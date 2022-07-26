@@ -1,12 +1,13 @@
 import './styles/main.scss'
 
+import { AppProvider } from 'lib/appState'
 import { DashboardLayout } from './layouts';
 
 function App() {
   return (
-    <div className="App">
+    <AppProvider>
       <DashboardLayout />
-    </div>
+    </AppProvider>
   );
 }
 

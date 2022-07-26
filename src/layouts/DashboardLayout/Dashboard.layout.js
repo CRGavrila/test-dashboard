@@ -3,10 +3,11 @@ import React, { useEffect, useState, useMemo } from 'react'
 import BgImage from 'assets/images/stone-beach-gotland.jpg'
 
 import { Navbar, LastNews, WeatherStatus } from 'modules'
-
+import { useAppState } from 'lib/appState'
 import { getWeather } from 'services'
 
 import './DashboardLayout.scss'
+import Drawer from 'modules/Drawer/Drawer'
 
 const DashboardLayout = () => {
   const [tab, setTab] = useState(0)
@@ -14,6 +15,7 @@ const DashboardLayout = () => {
   const [newsData, setNewsData] = useState(null)
   const [loadingNews, setLoadingNews] = useState(true)
   const [loadingWeather, setLoadingWeather] = useState(true)
+  const { drawer } = useAppState()
 
   const tabsValues = useMemo(() => {
     
@@ -99,6 +101,7 @@ const DashboardLayout = () => {
           onChangeTab={handleTab}
         />
       </div>
+      <Drawer open={drawer.open} />
     </div>
   )
 }
