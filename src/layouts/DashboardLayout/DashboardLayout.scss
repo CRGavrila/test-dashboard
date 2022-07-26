@@ -1,0 +1,12 @@
+.DashboardLayout {
+  background-color: rgb(255, 178, 54);
+}
+
+.DashboardLayoutSides {
+  display: flex;
+}
+
+.DashboardLayoutSides-Item {
+  min-height: calc(100vh / 2 - 71px);
+  flex: 1 1;
+}

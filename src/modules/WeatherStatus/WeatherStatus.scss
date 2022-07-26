@@ -1,0 +1,43 @@
+.WeatherStatus {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem 3.4rem 3.2rem 5rem;
+  color: #fff;
+}
+
+.WeatherStatusInfos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.WeatherStatusInfos-Tabs {
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+  list-style: none;
+}
+
+.WeatherStatusInfos-Tab {
+  position: relative;
+  padding-bottom: 0.2rem;
+  margin-left: 2.4rem;
+  opacity: 0.6;
+  font-size: 1.2rem;
+  font-weight: 600;
+  
+  cursor: pointer;
+
+  &--active {
+    opacity: 1;
+    border-bottom: 0.2rem solid #fff;
+    
+  }
+}
+
+.WeatherStatusInfos-Footer-List {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}

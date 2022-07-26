@@ -1,0 +1,10 @@
+.Avatar {
+  &--round {
+    border-radius: 50%;
+  }
+
+  &--small {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}
