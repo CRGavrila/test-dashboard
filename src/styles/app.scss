@@ -1,0 +1,34 @@
+:root {
+	font-size: $rem-baseline;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+	background: $page-background-color;
+
+	font-family: 'Montserrat', sans-serif;
+	color: $color-black;
+  font-size: $font-size-default;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: $font-weight-default;
+	line-height: $font-lineheight-default;
+	letter-spacing: $font-letterspacing-default;
+}
+
+#root {
+	display: block;
+
+	min-height: 100vh;
+}
+
+button {
+  border: 0;
+	outline: none;
+  cursor: pointer;
+
+	&:focus {
+		outline: none;
+	}
+}
